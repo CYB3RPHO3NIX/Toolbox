@@ -11,15 +11,6 @@ namespace StringLibrary
             return new string(charArray);
         }
 
-        // Method to check if a string is a palindrome
-        public static bool IsPalindrome(string input)
-        {
-            // Remove non-alphanumeric characters and convert to lowercase
-            string cleanString = Regex.Replace(input, "[^a-zA-Z0-9]", "").ToLower();
-            string reversedString = Reverse(cleanString);
-            return cleanString == reversedString;
-        }
-
         // Method to count the occurrences of a substring in a string
         public static int CountSubstringOccurrences(string input, string substring)
         {
